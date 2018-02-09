@@ -16,4 +16,3 @@ git merge ReadMe
 
 git add AllMyCommands.txt
 git commit -m "add AllMyCommands.txt. explains the steps performed in individual task"
-git push -u origin master
