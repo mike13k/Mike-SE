@@ -1,0 +1,19 @@
+cd mike-se
+git init
+git add FirstFile.txt SeconedFile.txt ThirdFile.txt
+rm -f SeconedFile.txt
+git checkout SeconedFile.txt
+git commit -m "add FirstFile.txt, SeconedFile.txt, ThirdFile.txt after deleting SeconedFile.txt and roll it back"
+git remote add origin https://github.com/mike13k/mike-se.git
+git push -u origin master
+touch README.md
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "adding README.md to the repo. it has description of the repo"
+git checkout master
+git merge ReadMe
+
+git add AllMyCommands.txt
+git commit -m "add AllMyCommands.txt. explains the steps performed in individual task"
+git push -u origin master
